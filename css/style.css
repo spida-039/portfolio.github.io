@@ -168,8 +168,7 @@ footer #icons a:hover {
     box-shadow: 0 0 15px 5px rgba(0, 255, 200, 0.8);
   }
   50% {
-    border-color: rgba(0, 255, 200, 0.8);
-    box-shadow: 0 0 15px 5px rgba(0, 255, 200, 0.8);
+    box-shadow: 0 0 15px 5px rgba(255, 0, 43, 0.8);
   }
   100% {
     border-color: rgba(52, 152, 219, 0); /* Back to transparent border */
@@ -181,7 +180,7 @@ footer #icons a:hover {
   border: 5px solid transparent; /* Initial transparent border */
   border-radius: 50%;
   padding: 5px;  /* Padding to keep the border visible around the image */
-  transition: transform 0.5s ease; /* Smooth transition for scaling */
+  transition: transform 0.4s ease; /* Smooth transition for scaling */
   animation: glowingBorder 5s infinite; /* Apply the glowing border animation */
 }
 
