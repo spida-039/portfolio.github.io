@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Rocky Sukude</title>
+
+    <!-- Favicon & Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Icon Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .projects {
+            margin-top: 2rem;
+        }
+
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h5 {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .card h5 a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        .card h5 a:hover {
+            color: #388E3C;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo-section">
+            <div id="logo">Rocky Sukude <span>&reg;
+            </span></div>
+            <div id="slogan">"They doubted me, so I keep coding them wrong."</div>
+        </div>
+        <nav id="nav-bar">
+            <ul class="links">
+                <li><a href="/html/index.html" aria-label="Home">Home</a></li>
+                <li><a href="/html/details.html" aria-label="About">About</a></li>
+                <li><a href="/html/skills.html" aria-label="Skills">Skills</a></li>
+                <li><a href="/html/contact.html" aria-label="Contact">Contact</a></li>
+                <li><a href="/html/resume.html" aria-label="Resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Projects</h1>
+        <p style="text-align: center; font-size: 1.2rem; color: #555;">
+            Here are some of the projects I have worked on, showcasing my skills and passion for problem-solving.
+        </p>
+
+        <section class="projects container">
+            <div class="card-deck">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h5 class="card-title"><a href="https://soit-iis.mandela.ac.za/GRP-03-12" target="_blank" aria-label="Ward Management System">Ward Management System</a></h5>
+                    <p class="card-text">A comprehensive system for managing hospital ward operations, including ward stock, consumables, and order tracking.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h5 class="card-title"><a href="/html/portfolio.html" target="_blank" aria-label="Portfolio Website">Portfolio Website</a></h5>
+                    <p class="card-text">Built a responsive and dynamic personal portfolio to showcase my skills, projects, and experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <p style="text-align: center; font-size: 1.2rem; color: #555; margin-top: 1rem;">
+            I have a few projects currently under development. They will be made available as soon as they are completed.
+        </p>
+        
+    </main>
+
+    <footer>
+        <div id="icons">
+            <a href="#" class="fa fa-html5" aria-label="HTML5"></a>
+            <a href="#" class="fa fa-css3" aria-label="CSS3"></a>
+            <a href="#" class="devicon-javascript-plain" aria-label="JavaScript"></a>
+            <a href="#" class="devicon-jquery-plain" aria-label="jQuery"></a>
+        </div>
+        <p>© 2024 Rocky Sukude | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

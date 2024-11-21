@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skills | Rocky Sukude</title>
+
+    <!-- Favicon & Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Icon Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        h1, h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            color: #4CAF50;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: #fff;
+            width: 280px;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-card i {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .skill-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skill-card {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="logo-section">
+            <div id="logo">Rocky Sukude <span>&reg;
+            </span></div>
+            <div id="slogan">"They doubted me, so I keep coding them wrong."</div>
+        </div>
+        <nav id="nav-bar">
+            <ul class="links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/details.html">About</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
+                <li><a href="/html/projects.html">Projects</a></li>
+                <li><a href="/html/resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>My Skills</h1>
+        <p style="text-align: center; font-size: 1.2rem; color: #555;">
+            Leveraging technology to solve complex problems and deliver innovative solutions.
+        </p>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <div class="skill-card">
+                <i class="devicon-dotnetcore-plain"></i>
+                <h3>ASP.NET Core/MVC</h3>
+                <p>Building secure and scalable web applications with modern .NET frameworks.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-csharp-plain"></i>
+                <h3>C#</h3>
+                <p>Expertise in object-oriented programming and enterprise-level solutions.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa fa-database"></i>
+                <h3>SQL Server</h3>
+                <p>Designing and optimizing database schemas for high performance.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa fa-html5"></i>
+                <h3>HTML & CSS</h3>
+                <p>Crafting responsive and visually appealing front-end designs.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-javascript-plain"></i>
+                <h3>JavaScript</h3>
+                <p>Enhancing user experiences with dynamic and interactive interfaces.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-bootstrap-plain"></i>
+                <h3>Bootstrap</h3>
+                <p>Utilizing modern frameworks to ensure responsive design and usability.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-python-plain"></i>
+                <h3>Python</h3>
+                <p>Building versatile applications for web, data analysis, and automation.</p>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-git-plain"></i>
+                <h3>Version Control</h3>
+                <p>Managing collaborative projects with Git and GitHub workflows.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa fa-lightbulb-o"></i>
+                <h3>Problem Solving</h3>
+                <p>Breaking down complex challenges into efficient and innovative solutions.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="icons">
+            <a href="#" class="fa fa-html5"></a>
+            <a href="#" class="fa fa-css3"></a>
+            <a href="#" class="devicon-javascript-plain"></a>
+            <a href="#" class="devicon-jquery-plain"></a>
+        </div>
+        <p>© 2024 Rocky Sukude | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

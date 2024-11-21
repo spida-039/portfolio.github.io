@@ -1,0 +1,191 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+#logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+}
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color:rgba(0, 255, 200, 0.8);
+}
+#slogan {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+#nav-bar {
+  margin-top: 10px;
+}
+#nav-bar .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+#nav-bar .links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+#aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: url('/image/background.jpg') center/cover no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 60px;
+  color: white;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  gap: 20px;
+}
+.profile-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  box-shadow: 0 0 15px 5px rgba(0, 255, 200, 0.8);
+}
+.profile-container img:hover {
+  box-shadow: 0 0 15px 5px rgba(35, 153, 127, 0.8);
+}
+.profile-info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-info h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.profile-info p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.projects-btn {
+  margin: 15px 0;
+}
+.projects-btn a {
+  text-decoration: none;
+  color: #fff;
+  background-color:rgba(0, 255, 200, 0.8);
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.projects-btn a:hover {
+  background-color:rgba(35, 153, 127, 0.8);
+}
+.social-links {
+  margin-top: 15px;
+}
+.social-links a {
+  color:rgba(0, 255, 200, 0.8);
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+.social-links a:hover {
+  color: #fff;
+}
+.about-me {
+  margin-top: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  max-width: 800px;
+}
+.about-me p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+  .profile-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  .about-me {
+      padding: 15px;
+  }
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer #icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+footer #icons a:hover {
+  transform: scale(1.2);
+  color: #4CAF50;
+}
+
+
+
+
+/* Glowing border animation */
+@keyframes glowingBorder {
+  0% {
+    border-color: rgba(52, 152, 219, 0); /* Start with transparent border */
+    box-shadow: 0 0 15px 5px rgba(0, 255, 200, 0.8);
+  }
+  50% {
+    border-color: rgba(0, 255, 200, 0.8);
+    box-shadow: 0 0 15px 5px rgba(0, 255, 200, 0.8);
+  }
+  100% {
+    border-color: rgba(52, 152, 219, 0); /* Back to transparent border */
+    box-shadow: 0 0 15px 5px rgba(0, 255, 200, 0.8);
+  }
+}
+
+.profile-img {
+  border: 5px solid transparent; /* Initial transparent border */
+  border-radius: 50%;
+  padding: 5px;  /* Padding to keep the border visible around the image */
+  transition: transform 0.5s ease; /* Smooth transition for scaling */
+  animation: glowingBorder 5s infinite; /* Apply the glowing border animation */
+}
+
+/* Hover effect on profile image */
+.profile-img:hover {
+  transform: scale(1.1); /* Slightly scale up the image on hover */
+}

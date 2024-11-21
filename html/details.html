@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About | Rocky Sukude</title>
+
+    <!-- Favicon & Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Icon Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        h1, h2, h3 {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            color: #4CAF50;
+        }
+
+        .about-section, .skills-section, .hobbies-section {
+            padding: 1rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .about-section p, .hobbies-section p {
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .skills-section ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-section li {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            min-width: 150px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills-section li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills-section li i {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .skills-section li {
+                font-size: 1rem;
+                min-width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="logo-section">
+            <div id="logo">Rocky Sukude <span>&reg;
+            </span></div>
+            <div id="slogan">"They doubted me, so I keep coding them wrong."</div>
+        </div>
+        <nav id="nav-bar" aria-label="Main Navigation">
+            <ul class="links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/skills.html">Skills</a></li>
+                <li><a href="/html/contact.html">Contact</a></li>
+                <li><a href="/html/projects.html">Projects</a></li>
+                <li><a href="/html/resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>About Me</h1>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>Summary</h2>
+            <p>
+                I am a passionate and dedicated final-year software development student, eager to begin my journey as an entry-level developer. 
+                With a strong foundation in C#, SQL, and problem-solving, I am committed to learning and applying my skills to create robust and scalable 
+                web applications. My academic projects have given me hands-on experience with building solutions that are both functional and user-friendly.
+            </p>
+            <p>
+                While I am still gaining practical experience, I have developed a solid understanding of modern tools and frameworks like 
+                Bootstrap, Git, and ASP.NET Core MVC through coursework and personal projects. My goal is to grow as a developer and contribute 
+                to impactful applications that meet real-world needs, focusing on efficiency and exceptional user experience.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2>My Skills</h2>
+            <ul>
+                <li><i class="devicon-dotnetcore-plain" aria-hidden="true"></i> ASP.NET Core</li>
+                <li><i class="devicon-csharp-plain" aria-hidden="true"></i> C#</li>
+                <li><i class="fa fa-database" aria-hidden="true"></i> SQL Server</li>
+                <li><i class="fa fa-html5" aria-hidden="true"></i> HTML & CSS</li>
+                <li><i class="devicon-javascript-plain" aria-hidden="true"></i> JavaScript</li>
+                <li><i class="devicon-bootstrap-plain" aria-hidden="true"></i> Bootstrap</li>
+                <li><i class="devicon-python-plain" aria-hidden="true"></i> Python</li>
+                <li><i class="devicon-git-plain" aria-hidden="true"></i> Version Control (Git)</li>
+                <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Problem Solving</li>
+            </ul>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="hobbies-section">
+            <h2>Hobbies & Interests</h2>
+            <p>
+                When I am not coding, I enjoy immersing myself in music, experimenting with new sounds and rhythms, and staying updated on the latest 
+                advancements in technology. I also have a keen interest in collaborating on projects, where I can learn from others while contributing 
+                my ideas. Additionally, I value opportunities to help peers and aspiring developers by sharing knowledge and working together 
+                on creative solutions.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="icons" aria-label="Social and Technology Links">
+            <a href="#" class="fa fa-html5" aria-label="HTML"></a>
+            <a href="#" class="fa fa-css3" aria-label="CSS"></a>
+            <a href="#" class="devicon-javascript-plain" aria-label="JavaScript"></a>
+            <a href="#" class="devicon-jquery-plain" aria-label="jQuery"></a>
+        </div>
+        <p>© 2024 Rocky Sukude | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

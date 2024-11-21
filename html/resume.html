@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Rocky Sukude</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    
+    
+    <!-- Favicon & Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Icon Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .resume-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Sidebar styling */
+        .left-aside {
+            width: 30%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        /* Right Content styling */
+        .right-content {
+            width: 65%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            background: #f1f1f1;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .skill-bar-fill {
+            background: #4CAF50;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 5px;
+        }
+
+        .skill-bar-fill-languages {
+            background: #2196F3;
+            color: #fff;
+        }
+
+        h2, h3 {
+            color: #2c3e50;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .section .experience {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .section .experience h5 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .section .experience p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .hr-line {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .resume-download-btn {
+    background-color: #2196F3; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.resume-download-btn:hover {
+    background-color: #1769aa; /* Darker blue on hover */
+    color: #e3f2fd; /* Lighter text color on hover */
+}
+
+.download-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.download-btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    color: #e8f5e9; /* Lighter text color on hover */
+}
+
+/* Add spacing between icons and text */
+.left-aside p i {
+    margin-right: 8px; /* Adjust as needed */
+    vertical-align: middle; /* Ensures proper alignment */
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="logo-section">
+            <div id="logo">Rocky Sukude <span>&reg;
+            </span></div>
+            <div id="slogan">"They doubted me, so I keep coding them wrong."</div>
+        </div>
+    <nav id="nav-bar">
+        <ul class="links">
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a href="/html/details.html">About</a></li>
+            <li><a href="/html/skills.html">Skills</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+            <li><a href="/html/projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="resume-container">
+    <!-- Left Sidebar -->
+    <aside class="left-aside">
+        <div >
+            <h2>Rocky Sukude</h1>
+            <h3>Entry-Level Software Developer</h2>
+            <p><i class="fa fa-home"></i>Port Shepstone, KZN</p>
+            <p><i class="fa fa-envelope"></i>s225184060.mandela.ac.za</p>
+            <p><i class="fa fa-phone"></i>+27 83 761 6437</p>
+        </div>
+
+        <div>
+            <h3>Skills</h3>
+            <p>Problem Solving</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 99%;">99%</div></div>
+            <p>C#</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 99%;">99%</div></div>
+            <p>SQL server</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 99%;">99%</div></div>
+            <p>Bootstrap</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+            <p>Asp.net Core/MVC</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+            <p>Html & Css</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+            <p>Python</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;">85%</div></div>
+            <p>JavaScript</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;">85%</div></div>
+            <p>Version Control</p>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">80%</div></div>
+        </div>
+
+        <div >
+            <h3>Languages</h3>
+            <p>IsiZulu</p>
+            <div class="skill-bar"><div class="skill-bar-fill skill-bar-fill-languages" style="width: 99%;">99%</div></div>
+            <p>English</p>
+            <div class="skill-bar"><div class="skill-bar-fill skill-bar-fill-languages" style="width: 99%;">99%</div></div>
+            <p>IsiXhosa</p>
+            <div class="skill-bar"><div class="skill-bar-fill skill-bar-fill-languages" style="width: 25%;">25%</div></div>
+        </div>
+    </aside>
+
+    <!-- Right Content -->
+    <div class="right-content">
+        <!-- Profile Section -->
+        <div>
+            <h2>Profile</h2>
+            <div class="section">
+                  <p>
+                    As a passionate and dedicated final-year software development student,
+                     I specialize in creating efficient, scalable, and user-friendly applications. 
+                     With a strong foundation in C#, ASP.NET Core/MVC, and front-end technologies like Bootstrap,
+                      I excel in building dynamic and visually appealing web solutions. While I currently lack formal work experience, 
+                      I am eager to learn and grow, bringing enthusiasm, creativity, and a commitment to continuous improvement to every project I undertake. 
+                    </p>
+            </div>
+        </div>
+        <div class="hr-line"></div>
+        <div>
+            <h2>Education</h2>
+            <div class="section">
+                <h3>Nelson Madela University</h3>
+                <p>Expected Graduation: 2025</p>
+                <p>Diploma of Information Technology: Software Development</p>
+            </div>
+            <div class="section">
+                <h3>Online Courses</h3>
+                <ul>
+                   <li><pre>Solo Learn: SQL Intermediate</pre></li>
+                    <li><pre>Solo Learn: Introduction to Python</pre></li>
+                    <li><pre>Cisco:      Introduction to Cybersecurity</pre></li>
+                    <li><pre>Cisco:      Introduction to Network</pre></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hr-line"></div>
+
+        <div>
+            <h2>Projects</h2>
+            <div class="section">
+                <div class="experience">
+                    <h5>Personal Portfolio Website</h5>
+                                           <p>Designed and implemented a responsive portfolio website using HTML, CSS, and JavaScript. Integrated animations with Framer Motion. Showcasing my skills in design and web development.</p>
+                </div>
+                <div class="experience">
+                    <h5>Ward Management System</h5>
+                        <p>Developed a comprehensive hospital ward management system with modules for inventory tracking, staff management, and reporting. Technologies used: ASP.NET Core/MVC, SQL Server, Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+            <div>
+                <h2>Certifications</h2>
+                <div class="section">
+                    
+                    <ul> 
+                        <li>Introduction to Cybersecurity</li>
+                        <li>Introduction to Network</li>
+                        <li>Introduction to Python</li>
+                        <li>SQL Intermediate</li>
+                  </ul>
+                </div>
+            </div>
+        <!-- Buttons to download resume & certificates -->
+        <a href="/downloads/certificates.zip" class="download-btn" download="Certificates">Download Certificates</a>
+        <a href="javascript:void(0);" class="resume-download-btn" onclick="downloadResume()">Download Resume</a>
+    </div>
+</div>
+
+<footer>
+  <div id="icons">
+      <a href="#" class="fa fa-html5"></a>
+      <a href="#" class="fa fa-css3"></a>
+      <a href="#" class="devicon-javascript-plain"></a>
+      <a href="#" class="devicon-jquery-plain"></a>
+  </div>
+  <p>© 2024 Rocky Sukude | All Rights Reserved</p>
+</footer>
+
+<!-- Include jsPDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+   function downloadResume() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Colors and Fonts
+    const headingColor = [30, 120, 180];
+    const textColor = [50, 50, 50];
+    const accentColor = [220, 220, 220];
+    const headerColor = [0, 0, 0];
+   
+    // Header Section
+    doc.setFillColor(...headerColor);
+    doc.rect(0, 0, 210, 35, "F"); // Header background
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(22);
+    doc.setTextColor(40, 70, 100);
+    doc.text("Rocky Sukude", 105, 15, null, null, "center");  // Adjusted position for centered text
+
+    doc.setFont("helvetica", "italic");
+    doc.setTextColor(50);
+    doc.setFontSize(16);
+    doc.text("Entry-Level Software Developer", 105, 25, null, null, "center");
+
+    // Contact Information
+    doc.setTextColor(...textColor);
+    doc.setFontSize(12);
+    doc.text("Port Shepstone, KZN", 10, 45);
+    doc.text("s225184060.mandela.ac.za", 10, 51);
+    doc.text("+27 83 761 6437", 10, 57);
+
+    // Divider
+    doc.setDrawColor(...accentColor);
+    doc.line(10, 65, 200, 65);
+
+    // Profile Section
+    doc.setFillColor(...accentColor);
+    doc.rect(10, 70, 190, 7, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(...headingColor);
+    doc.setFontSize(14);
+    doc.text("Profile", 15, 75);
+
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(...textColor);
+    doc.setFontSize(12);
+    doc.text(
+        "As a passionate and dedicated final-year software development student, I specialize in creating efficient, scalable, and user-friendly applications. With a strong foundation in C#, ASP.NET Core/MVC, and front-end technologies like Bootstrap, I excel in building dynamic and visually appealing web solutions. While I currently lack formal work experience, I am eager to learn and grow, bringing enthusiasm, creativity, and a commitment to continuous improvement to every project I undertake.",
+        15,
+        85,
+        { maxWidth: 180 }
+    );
+
+    // Skills Section
+    doc.setFillColor(...accentColor);
+    doc.rect(10, 115, 190, 7, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(...headingColor);
+    doc.text("Skills", 15, 120);
+
+    const skills = [
+        "- Problem Solving",
+        "- C#",
+        "- SQL Server",
+        "- Bootstrap",
+        "- ASP.NET Core",
+        "- HTML & CSS",
+        "- Python",
+        "- JavaScript",
+        "- Version Control"
+    ];
+    skills.forEach((skill, index) => {
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(12);
+        doc.setTextColor(...textColor);
+        doc.text(skill, 15, 130 + index * 6);
+    });
+
+    // Education Section
+    const startY = 190; // Dynamically adjusted to fit content
+    doc.setFillColor(...accentColor);
+    doc.rect(10, startY, 190, 7, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(...headingColor);
+    doc.text("Education", 15, startY + 5);
+
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(...textColor);
+    doc.text("Nelson Mandela University", 15, startY + 15);
+    doc.text("Diploma: Information Technology (Software Development)", 15, startY + 21);
+    doc.text("Expected Graduation: 2025", 15, startY + 27);
+
+    // Projects Section
+    const projectStartY = startY + 45;
+    doc.setFillColor(...accentColor);
+    doc.rect(10, projectStartY, 190, 7, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(...headingColor);
+    doc.text("Projects", 15, projectStartY + 5);
+
+    const projects = [
+        "- Personal Portfolio Website: Designed and implemented a responsive website showcasing skills.",
+        "- Ward Management System: Hospital ward management system with inventory tracking."
+    ];
+    projects.forEach((project, index) => {
+        doc.setFont("helvetica", "normal");
+        doc.setTextColor(...textColor);
+        doc.text(project, 15, projectStartY + 15 + index * 6);
+    });
+
+    // Footer
+    doc.setTextColor(...textColor);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(12);
+    doc.text("© 2024 Rocky Sukude | All Rights Reserved", 105, 290, null, null, "center");
+
+    // Save the document
+    doc.save("Resume_Rocky_Sukude.pdf");
+}
+    </script>
+</body>
+</html>
