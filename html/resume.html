@@ -166,7 +166,7 @@
         </div>
     <nav id="nav-bar">
         <ul class="links">
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="../html/details.html">About</a></li>
             <li><a href="../html/skills.html">Skills</a></li>
             <li><a href="../html/contact.html">Contact</a></li>
@@ -225,33 +225,38 @@
         <div>
             <h2>Profile</h2>
             <div class="section">
-                  <p>
-                    As a passionate and dedicated final-year software development student,
-                     I specialize in creating efficient, scalable, and user-friendly applications. 
-                     With a strong foundation in C#, ASP.NET Core/MVC, and front-end technologies like Bootstrap,
-                      I excel in building dynamic and visually appealing web solutions. While I currently lack formal work experience, 
-                      I am eager to learn and grow, bringing enthusiasm, creativity, and a commitment to continuous improvement to every project I undertake. 
-                    </p>
+                <p>
+                    I'm a proud cum laude graduate with a <strong>Diploma in IT: Software Developer (2022-2024)</strong> and currently a <strong>first-year Advanced Dip: Software Developer student</strong>.
+                    <br/>
+                    <br/>
+                    I specialize in building efficient, scalable, and user-focused applications using technologies like <strong>C#, ASP.NET Core MVC, SQL Server</strong>, and <strong>Bootstrap</strong>. 
+                    While I'm still gaining formal industry experience, I bring a strong passion for problem-solving, a hunger to learn, and a commitment to continuous improvement. 
+                    I thrive in creative environments where I can contribute to real-world solutions and collaborate with others to deliver polished, high-impact software.
+                </p>
             </div>
         </div>
+        
         <div class="hr-line"></div>
         <div>
             <h2>Education</h2>
             <div class="section">
-                <h3>Nelson Madela University</h3>
-                <p>Expected Graduation: 2025</p>
-                <p>Diploma of Information Technology: Software Development</p>
+                <h3>Nelson Mandela University</h3>
+                <p><strong>Advanced Diploma in Information Technology: Software Development</strong></p>
+                <p>Current Student - Expected Graduation: 2025</p>
+                <br />
+                <p><strong>Diploma in Information Technology: Software Development</strong></p>
+                <p>Graduated: 2024</p>
             </div>
             <div class="section">
                 <h3>Online Courses</h3>
                 <ul>
-                   <li>Solo Learn: SQL Intermediate</pre></li>
-                    <li>Solo Learn: Introduction to Python</pre></li>
-                    <li>Cisco:      Introduction to Cybersecurity</pre></li>
-                    <li>Cisco:      Introduction to Network</pre></li>
+                    <li>SoloLearn: SQL Intermediate</li>
+                    <li>SoloLearn: Introduction to Python</li>
+                    <li>Cisco: Introduction to Cybersecurity</li>
+                    <li>Cisco: Introduction to Networking</li>
                 </ul>
             </div>
-        </div>
+        </div>        
 
         <div class="hr-line"></div>
 
@@ -260,26 +265,32 @@
             <div class="section">
                 <div class="experience">
                     <h5>Personal Portfolio Website</h5>
-                                           <p>Designed and implemented a responsive portfolio website using HTML, CSS, and JavaScript. Integrated animations with Framer Motion. Showcasing my skills in design and web development.</p>
+                    <p>Designed and implemented a responsive portfolio website using HTML, CSS, and JavaScript. Integrated animations with Framer Motion. Showcasing my skills in design and web development.</p>
                 </div>
                 <div class="experience">
                     <h5>Ward Management System</h5>
-                        <p>Developed a comprehensive hospital ward management system with modules for inventory tracking, staff management, and reporting. Technologies used: ASP.NET Core/MVC, SQL Server, Bootstrap.</p>
+                    <p>Developed a comprehensive hospital ward management system with modules for inventory tracking, staff management, and reporting. Technologies used: ASP.NET Core/MVC, SQL Server, Bootstrap.</p>
+                </div>
+                <div class="experience">
+                    <h5>Pharmacy Prescription Management System</h5>
+                    <p>Currently developing a full-stack web-based system for managing pharmacy prescriptions and stock. Features include role-based authentication (Manager, Pharmacist, Customer), inventory control with automated reorder alerts, prescription uploads, repeat request handling, and reporting dashboards. Built using ASP.NET Core MVC, C#, SQL Server, and Bootstrap.</p>
                 </div>
             </div>
         </div>
-            <div>
-                <h2>Certifications</h2>
-                <div class="section">
-                    
-                    <ul> 
-                        <li>Introduction to Cybersecurity</li>
-                        <li>Introduction to Network</li>
-                        <li>Introduction to Python</li>
-                        <li>SQL Intermediate</li>
-                  </ul>
-                </div>
-            </div>
+
+           <div>
+    <h2>Certifications</h2>
+    <div class="section">
+        <ul> 
+            <li>Diploma in Information Technology: Software Development - Nelson Mandela University (2024)</li>
+            <li>Introduction to Cybersecurity - Cisco</li>
+            <li>Introduction to Network - Cisco</li>
+            <li>Introduction to Python - SoloLearn</li>
+            <li>SQL Intermediate - SoloLearn</li>
+        </ul>
+    </div>
+</div>
+
         <!-- Buttons to download resume & certificates -->
         <a href="../downloads/certificates.zip" class="download-btn" download="Certificates">Download Certificates</a>
         <a href="javascript:void(0);" class="resume-download-btn" onclick="downloadResume()">Download Resume</a>
@@ -333,23 +344,24 @@
     doc.setDrawColor(...accentColor);
     doc.line(10, 65, 200, 65);
 
-    // Profile Section
-    doc.setFillColor(...accentColor);
-    doc.rect(10, 70, 190, 7, "F");
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor(...headingColor);
-    doc.setFontSize(14);
-    doc.text("Profile", 15, 75);
+   // Profile Section
+doc.setFillColor(...accentColor);
+doc.rect(10, 70, 190, 7, "F");
+doc.setFont("helvetica", "bold");
+doc.setTextColor(...headingColor);
+doc.setFontSize(14);
+doc.text("Profile", 15, 75);
 
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(...textColor);
-    doc.setFontSize(12);
-    doc.text(
-        "As a passionate and dedicated final-year software development student, I specialize in creating efficient, scalable, and user-friendly applications. With a strong foundation in C#, ASP.NET Core/MVC, and front-end technologies like Bootstrap, I excel in building dynamic and visually appealing web solutions. While I currently lack formal work experience, I am eager to learn and grow, bringing enthusiasm, creativity, and a commitment to continuous improvement to every project I undertake.",
-        15,
-        85,
-        { maxWidth: 180 }
-    );
+doc.setFont("helvetica", "normal");
+doc.setTextColor(...textColor);
+doc.setFontSize(12);
+doc.text(
+    "I'm a proud cum laude gruduate with a Diploma in Information Technology: Software Development, currently pursuing my Advanced Diploma in Software Development. I specialize in creating efficient, scalable, and user-friendly applications. With a strong foundation in C#, ASP.NET Core MVC, SQL Server, and front-end technologies like Bootstrap, I build dynamic and visually engaging web solutions. While I may not yet have formal work experience, I bring enthusiasm, creativity, and a commitment to continuous growth to every project I undertake.",
+    15,
+    85,
+    { maxWidth: 180 }
+);
+
 
     // Skills Section
     doc.setFillColor(...accentColor);
@@ -385,28 +397,32 @@
     doc.text("Education", 15, startY + 5);
 
     doc.setFont("helvetica", "normal");
+doc.setTextColor(...textColor);
+doc.text("Nelson Mandela University", 15, startY + 15);
+doc.text("Advanced Diploma: Information Technology (Software Development)", 15, startY + 21);
+doc.text("Expected Graduation: 2025", 15, startY + 27);
+doc.text("Diploma: Information Technology (Software Development)", 15, startY + 33);
+doc.text("Graduated: 2024", 15, startY + 39);
+
+   // Projects Section
+const projectStartY = startY + 45;
+doc.setFillColor(...accentColor);
+doc.rect(10, projectStartY, 190, 7, "F");
+doc.setFont("helvetica", "bold");
+doc.setTextColor(...headingColor);
+doc.text("Projects", 15, projectStartY + 5);
+
+const projects = [
+    "- Personal Portfolio Website: Designed and implemented a responsive website showcasing skills.",
+    "- Ward Management System: Hospital ward management system with inventory tracking.",
+    "- Pharmacy Prescription Management System: Under Development."
+];
+
+projects.forEach((project, index) => {
+    doc.setFont("helvetica", "normal");
     doc.setTextColor(...textColor);
-    doc.text("Nelson Mandela University", 15, startY + 15);
-    doc.text("Diploma: Information Technology (Software Development)", 15, startY + 21);
-    doc.text("Expected Graduation: 2025", 15, startY + 27);
-
-    // Projects Section
-    const projectStartY = startY + 45;
-    doc.setFillColor(...accentColor);
-    doc.rect(10, projectStartY, 190, 7, "F");
-    doc.setFont("helvetica", "bold");
-    doc.setTextColor(...headingColor);
-    doc.text("Projects", 15, projectStartY + 5);
-
-    const projects = [
-        "- Personal Portfolio Website: Designed and implemented a responsive website showcasing skills.",
-        "- Ward Management System: Hospital ward management system with inventory tracking."
-    ];
-    projects.forEach((project, index) => {
-        doc.setFont("helvetica", "normal");
-        doc.setTextColor(...textColor);
-        doc.text(project, 15, projectStartY + 15 + index * 6);
-    });
+    doc.text(project, 15, projectStartY + 15 + index * 6);
+});
 
     // Footer
     doc.setTextColor(...textColor);
